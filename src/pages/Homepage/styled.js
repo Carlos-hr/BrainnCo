@@ -4,6 +4,7 @@ import { RESULT } from "../../constants/colors";
 export const Main = styled.div`
   display: flex;
   min-height: 100vh;
+  background-color: lightblue;
 `;
 
 export const LeftSide = styled.div`

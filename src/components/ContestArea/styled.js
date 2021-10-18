@@ -55,9 +55,9 @@ export const Select = styled.select`
   border-radius: 5px;
   margin-top: 10vh;
   @media screen and (max-width: 426px) {
-    -webkit-transform: translateZ(200px); /* Equivalent or greater than parent's*/
-    transform: translateZ(200px);
-    margin-top: 5vh;
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    transform: translateZ(0px);
   }
 `;
 

@@ -7,14 +7,16 @@ export const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   @media screen and (max-width: 426px) {
     transform: rotate(360deg);
-    height: 45vh;
-    width: 100vw;
+    min-height: 45vh;
+    max-height: fit-content;
+    margin-top: 55vh;
     position: absolute;
-    bottom: 0;
     left: 0;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 `;
 
@@ -35,17 +37,24 @@ export const ResultContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: fit-content;
+  background-color: ${RESULT};
 `;
 
 export const Warning = styled.p`
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   padding-right: 3vw;
   padding-bottom: 3vh;
   text-align: center;
   @media screen and (max-width: 426px) {
+    /* position: absolute; */
+    /* bottom: 0; */
     padding-bottom: 1vh;
-    padding-top: 3vh;
   }
+`;
+
+export const WarningContainer = styled.div`
+  background-color: ${RESULT};
 `;
