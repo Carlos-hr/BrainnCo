@@ -49,8 +49,6 @@ export const Warning = styled.p`
   padding-bottom: 3vh;
   text-align: center;
   @media screen and (max-width: 426px) {
-    /* position: absolute; */
-    /* bottom: 0; */
     padding-bottom: 1vh;
   }
 `;
