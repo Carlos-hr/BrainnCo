@@ -22,7 +22,8 @@ const ContestResult = () => {
   };
   return (
     <Main>
-      <ResultContainer>{renderResult()}</ResultContainer>
+      <ResultContainer>{renderResult()}
+      </ResultContainer>
       <WarningContainer>
         <Warning>
           Este sorteio é meramente ilustrativo e não possui nenhuma ligação com

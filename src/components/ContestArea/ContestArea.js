@@ -1,16 +1,15 @@
 import React, { useContext } from "react";
-import { BASE_URL } from "../../constants/urls";
 import GlobalStateContext from "../../global/GlobalStateContext";
-import useRequestData from "../../hooks/useRequestData";
 import { Description, Main, Select, Text, Title, TitleArea } from "./styled";
 import logo from "../../assets/logo.svg";
 import moment from "moment";
 
 const ContestInput = () => {
-  const loteryGames = useRequestData(`${BASE_URL}/loterias`, []).data;
-  const { result, loteryId, setLoteryId } = useContext(GlobalStateContext);
+  const { result, loteryId, loteryGames, setLoteryId } =
+    useContext(GlobalStateContext);
 
-  const formatedDate = result && moment(result.data, "YYYY-MM-DD").format("DD/MM/YYYY");
+  const formatedDate =
+    result && moment(result.data, "YYYY-MM-DD").format("DD/MM/YYYY");
   const renderOptions = () => {
     return (
       loteryGames &&

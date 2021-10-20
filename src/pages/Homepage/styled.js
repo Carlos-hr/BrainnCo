@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { RESULT } from "../../constants/colors";
+import { MEGA, RESULT } from "../../constants/colors";
 
 export const Main = styled.div`
   display: flex;
   min-height: 100vh;
-  background-color: lightblue;
 `;
 
 export const LeftSide = styled.div`
@@ -43,4 +42,45 @@ export const Border = styled.div`
 export const RightSide = styled.div`
   width: 100vw;
   z-index: 1;
+`;
+
+export const SpinnerContainer = styled.div `
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${RESULT};
+`
+export const StyledSpinner = styled.svg`
+  animation: rotate 2s linear infinite;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  
+  & .path {
+    stroke: ${MEGA};
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
 `;
