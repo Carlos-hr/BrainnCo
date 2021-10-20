@@ -2,11 +2,14 @@ import styled from "styled-components";
 import { RESULT } from "../../constants/colors";
 
 export const Main = styled.div`
-  height: 100vh;
   background-color: ${RESULT};
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  @media screen and (min-width: 426px) {
+    height: 100vh;
+    justify-content: center;
+  }
 
   @media screen and (max-width: 426px) {
     transform: rotate(360deg);
@@ -16,7 +19,6 @@ export const Main = styled.div`
     position: absolute;
     left: 0;
     justify-content: space-between;
-    flex-grow: 1;
   }
 `;
 
@@ -42,19 +44,20 @@ export const ResultContainer = styled.div`
 `;
 
 export const Warning = styled.p`
-  position: relative;
-  bottom: 0;
-  right: 0;
   padding-right: 3vw;
   padding-bottom: 3vh;
   text-align: center;
   @media screen and (max-width: 426px) {
-    /* position: absolute; */
-    /* bottom: 0; */
     padding-bottom: 1vh;
   }
 `;
 
 export const WarningContainer = styled.div`
   background-color: ${RESULT};
+  @media screen and (min-width: 426px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 60%;
+  }
 `;
