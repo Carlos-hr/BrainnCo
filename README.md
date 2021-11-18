@@ -29,5 +29,5 @@ Faça o clone desse repositório em seu computador e execute o comando:
 `npm install` e `npm run start`.
 
 ## Página da aplicação
-<a href="http://www.case-brainn..surge.sh">Portfolio</a> 
+<a href="http://www.case-brainn..surge.sh">BrainnCo</a> 
 
