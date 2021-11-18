@@ -3,6 +3,12 @@
 > O objetivo é construir uma aplicação web front-end que mostre os Resultados das Loterias, replicando o layout do figma fornecido.
 
 ![image](https://user-images.githubusercontent.com/81276751/142435063-c2495709-fa3b-4ad1-9272-f55c047f0cc1.png)
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+- [x] Ajuste na responsividade;
+- [ ] Tratamento de erros
 
 ## :robot: Tecnologias: 
 
